@@ -1,4 +1,4 @@
-document.write("<h1>양수인가? 음수인가?</h1>")
+
 
 const inputNum = prompt("숫자를 입력해주세요")
 
@@ -13,8 +13,12 @@ const identify = (props) =>{
 }
 
 if(isNaN(inputNum)){
+
     inputNum = prompt("숫자를 입력해주세요")
+
 }
 else{
+
     identify(inputNum)
+    
 }
