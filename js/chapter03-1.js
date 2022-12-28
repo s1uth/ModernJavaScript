@@ -6,6 +6,6 @@ const odd = [1,3,5,7,9,11,13,15,17,19]
 const BetterThanTen = ""
 for(let i = 0; i < odd.length ; i++){
     if(odd[i]>10) document.write(`${odd[i]}, `)
-    else continue
-}
+    else continue   
+
 
