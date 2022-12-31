@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/chapter05-2.js"></script>
   <title>DOM</title>
   <style>
     * {
@@ -53,11 +54,11 @@
 <body>
   <h1>최대공약수 구하기</h1>
   <p>두 수를 입력한 후 [계산하기]를 클릭하세요.</p>
-  <form>
+  <form name="form">
     <label for="number1">첫 번째 수 : </label>
-    <input type="text" id="number1" placeholder="첫 번째 수">
+    <input type="text" name="number1" id="number1" placeholder="첫 번째 수">
     <label for="number2">두 번째 수 : </label>
-    <input type="text" id="number2" placeholder="두 번째 수">
+    <input type="text" name="number2" id="number2" placeholder="두 번째 수">
     <button type="button" id="calc">계산하기</button>
   </form>
   <div id="result"></div>  
