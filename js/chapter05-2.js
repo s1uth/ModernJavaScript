@@ -1,8 +1,3 @@
-const first = document.querySelector('#number1')
-const second = document.querySelector('#number2')
-const Btn = document.querySelector('#calc')
-
-const result = document.querySelector('#result')
 
 const GCD = (Num1, Num2) => {
 
@@ -35,8 +30,17 @@ const GCD = (Num1, Num2) => {
 
 }
 
-Btn.onClick = () => {
+window.onload = function(){
+    const Btn = document.getElementById('calc')
+    const result = document.querySelector('#result')
 
-  result.innerText = GCD(first.value, second.value)
+    Btn.onclick = () => {
 
+        const first = document.querySelector('#number1').value
+        const second = document.querySelector('#number2').value
+
+        result.innerHTML = `<p>${GCD(first, second)}</p>`
+
+    }
 }
+
