@@ -1,7 +1,7 @@
-const BtnView = document.querySelector('button #view')
-const contents = document.querySelector('div #detail')
+const BtnView = document.querySelector('#view')
+const contents = document.querySelector('.hidden')
 
 
- BtnView.onClick = () => {
-    contents.clas.toggle('hidden')  
+ BtnView.onclick = () => {
+    contents.classList.toggle('open')  
 }
