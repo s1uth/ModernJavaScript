@@ -39,7 +39,7 @@ window.onload = function(){
         const first = document.querySelector('#number1').value
         const second = document.querySelector('#number2').value
 
-        result.innerHTML = `<p>${GCD(first, second)}</p>`
+        result.innerHTML = `${GCD(first, second)}`
 
     }
 }
